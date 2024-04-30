@@ -1,12 +1,32 @@
 const mongoose = require("mongoose"); /* gestor de rutas */
 
 const salaSchema = mongoose.Schema({
-        variable1:{    /* nombre variable */
-            type: Int, /* tipo variable */
+        salaID:{            /* nombre variable */
+            type: Int,      /* tipo variable */
             required: true
         },
-        variable2:{
+        codigo:{
             type: Int,
+            required: true
+        },
+        numEquipos:{
+            type: Int,
+            required: true
+        },
+        disponible:{
+            type: boolean,
+            required: true
+        },
+        responsables:{
+            type: String,
+            required: true
+        },        
+        energíaUsada_Wh:{
+            type: Number,
+            required: true
+        },
+        detalles_TenerEnCuenta:{
+            type: String,
             required: true
         }
     }
