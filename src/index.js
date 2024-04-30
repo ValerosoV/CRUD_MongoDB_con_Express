@@ -1,3 +1,5 @@
+require('dotenv').config();            /*solicita la informacion el archivo .env para configurar la conexión*/
+
 const parser = require("body-parser");            /*esta libreria vino con npm init*/     
 
 const express = require('express');               /*la constante sera hecha usando la libreria back-end express*/
@@ -8,7 +10,7 @@ const salasRoutes = require("./routes/sala_computo");
 
 const mongoose = require("mongoose");   /*Llama al gestor de rutas mongoose para ser usado*/
 
-require('dotenv').config()              /*solicita la informacion el archivo .env para configurar la conexión*/
+
 
 app.use(parser.urlencoded({ extended: false }));    //permite leer los datos que vienen en la petición
 app.use(parser.json());                             // transforma los datos a formato JSON

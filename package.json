@@ -1,16 +1,22 @@
 {
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
   "name": "crud_mongodb_con_express",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "begin": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mongoose": "^8.3.3"
+    "mongoose": "^8.3.3",
+    "sparse-bitfield": "^3.0.3"
   }
 }
