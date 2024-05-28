@@ -17,7 +17,11 @@ const salaSchema = mongoose.Schema({
             type: String,
             required: true
         },        
-        energíaUsada_Wh:{
+        energiaUsada_Wh:{
+            type: Number,
+            required: true
+        },
+        tiempo_SinBloquear:{
             type: Number,
             required: true
         },
